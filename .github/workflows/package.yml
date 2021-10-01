@@ -33,7 +33,7 @@ jobs:
           NAME: ${{ steps.name_release.outputs.RELEASE }}
         run: |
           mkdir $NAME
-          mv target/release/gateway-mfr-rs $NAME/
+          mv target/release/gateway-mfr $NAME/
           cp README.md $NAME/
           cp LICENSE $NAME/
           tar -zcvf $NAME.tar.gz $NAME/
